@@ -1,0 +1,25 @@
+:: Entities
+1. User
+2. Doctor
+3. Appointment
+
+::User
+1. Name, age, gender, history
+Get set
+
+::Doctor
+1. Name, specialist, slots
+
+::Appointment
+1. ID, date
+
+register_doc(docname)
+register_patient(pname)
+mark_doc_avail(docname, List[(stime, etime)])
+show_availability()
+book_appointment(patient, docname, starttime)->bookingid
+cancel_booking(b_id)
+show_active_appointment_by_patient(pname)
+
+bonus
+wait_list_feature()
