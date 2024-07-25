@@ -1,4 +1,4 @@
-#include "Services/FileSystem.cpp"
+#include "Services/FileSystem.h"
 #include <iostream>
 
 using namespace std;
@@ -42,10 +42,17 @@ int main()
     auto res3 = fs.ls("/home/ayush");
     printVec(res3);
 
-    //T3 - Delete directory
+    //T5 - mv directory
+    cout << "T5 : " << endl;
+    fs.mv("/home/ayush", "/home/rajat");
+    auto res5 = fs.ls("/home/rajat");
+    printVec(res5);
+
+    //T4 - Delete directory
     cout << "T4 : " << endl;
-    fs.rm("/home/ayush");
-    auto res4 = fs.ls("/home/ayush");
+    fs.rm("/home/rajat");
+    auto res4 = fs.ls("/home/rajat");
     printVec(res4);
+
     return 0;
 }

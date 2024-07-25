@@ -23,3 +23,6 @@ show_active_appointment_by_patient(pname)
 
 bonus
 wait_list_feature()
+
+We can connect today after 4pm.
+Feel free to call me on my cell +91 9444230650
